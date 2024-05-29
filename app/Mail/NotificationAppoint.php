@@ -28,7 +28,7 @@ class NotificationAppoint extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Notification Appointment',
+            subject: 'Cita Notificación',
         );
     }
 

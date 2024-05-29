@@ -24,15 +24,14 @@ use App\Http\Controllers\Appointment\AppointmentAttentioncontroller;
 |
 */
 
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
 Route::group([
-
-    // 'middleware' => 'auth:api',
     'prefix' => 'auth',
-    // 'middleware' => ['role:admin','permission:publish articles'],
+    //'middleware' => ['cors'],
 ], function ($router) {
     Route::post('/register', [AuthController::class, 'register'])->name('register');
     Route::post('/login', [AuthController::class, 'login'])->name('login');
@@ -45,6 +44,7 @@ Route::group([
 
 Route::group([
     'middleware' => 'auth:api',
+
 ], function ($router) {
     Route::resource("roles",RolesController::class);
 

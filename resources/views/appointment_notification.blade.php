@@ -26,16 +26,16 @@
 	</style>
 	<![endif]-->
 	<!-- body, html, table, thead, tbody, tr, td, div, a, span { font-family: Arial, sans-serif !important; } -->
-	
+
 
 	<style type="text/css" media="screen">
 		body { padding:0 !important; margin:0 auto !important; display:block !important; min-width:100% !important; width:100% !important; background:#f4ecfa; -webkit-text-size-adjust:none }
 		a { color:#f3189e; text-decoration:none }
-		p { padding:0 !important; margin:0 !important } 
+		p { padding:0 !important; margin:0 !important }
 		img { margin: 0 !important; -ms-interpolation-mode: bicubic; /* Allow smoother rendering of resized image in Internet Explorer */ }
 
 		a[x-apple-data-detectors] { color: inherit !important; text-decoration: inherit !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
-		
+
 		.btn-16 a { display: block; padding: 15px 35px; text-decoration: none; }
 		.btn-20 a { display: block; padding: 15px 35px; text-decoration: none; }
 
@@ -49,7 +49,7 @@
 
 		.btn-secondary { border-radius: 10px; background: linear-gradient(to right, #9028df 0%,#f3189e 100%); }
 
-				
+
 		/* Mobile styles */
 		@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
 			.mpx-10 { padding-left: 10px !important; padding-right: 10px !important; }
@@ -60,11 +60,11 @@
 
 			.td,
 			.m-shell { width: 100% !important; min-width: 100% !important; }
-			
+
 			.mt-left { text-align: left !important; }
 			.mt-center { text-align: center !important; }
 			.mt-right { text-align: right !important; }
-			
+
 			.me-left { margin-right: auto !important; }
 			.me-center { margin: 0 auto !important; }
 			.me-right { margin-left: auto !important; }
@@ -113,7 +113,7 @@
 														</td>
 													</tr>
 												</table>											<!-- END Top -->
-											
+
 											<!-- Container -->
 											<table width="100%" border="0" cellspacing="0" cellpadding="0">
 												<tr>
@@ -130,7 +130,7 @@
 																		</tr>
 																	</table>
 																	<!-- Logo -->
-											
+
 																	<!-- Main -->
 																	<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																		<tr>
@@ -148,14 +148,14 @@
 																								<tr>
 																									<td class="title-30 a-center pb-10" style="font-size:30px; line-height:34px; color:#282828; font-family:'PT Sans', Arial, sans-serif; min-width:auto !important; text-align:center; padding-bottom: 10px;">
 																										<multiline>
-																											Hi "{{ $patient["name"] . ' '.$patient["surname"] }}"
+																											Hola "{{ $patient["name"] . ' '.$patient["surname"] }}"
 																										</multiline>
 																									</td>
 																								</tr>
 																								<tr>
 																									<td class="title-36 a-center pb-35" style="font-size:36px; line-height:40px; color:#282828; font-family:'PT Sans', Arial, sans-serif; min-width:auto !important; text-align:center; padding-bottom: 35px;">
 																										<multiline>
-																											<strong>New Message From "Clinica"</strong>
+																											<strong>Nuevo Mensaje de "Clinica"</strong>
 																										</multiline>
 																									</td>
 																								</tr>
@@ -171,11 +171,11 @@
 																																	<tr>
 																																		<td class="img-center pb-20" style="font-size:0pt; line-height:0pt; text-align:center; padding-bottom: 20px;">
                                                                                                                                             @if ($patient["avatar"])
-                                                                                                                                            <img src="{{ $patient["avatar"] }}" width="110" height="110" editable="true" border="0" alt="" />    
+                                                                                                                                            <img src="{{ $patient["avatar"] }}" width="110" height="110" editable="true" border="0" alt="" />
                                                                                                                                             @else
                                                                                                                                             <img src="../images/img_avatar.png" width="110" height="110" editable="true" border="0" alt="" />
                                                                                                                                             @endif
-																																		
+
                                                                                                                                         </td>
 																																	</tr>
 																																</table>
@@ -191,11 +191,11 @@
 																														<tr>
 																															<td class="text-16 lh-26 a-center c-black" style="font-size:16px; font-family:'PT Sans', Arial, sans-serif; min-width:auto !important; line-height: 26px; text-align:center; color:#282828;">
 																																<multiline>
-																																	<em>"ESPECIALIDAD : {{ $patient["specialitie_name"] }}"</em>
+																																	<em>ESPECIALIDAD : {{ $patient["specialitie_name"] }}</em>
                                                                                                                                     <br>
-                                                                                                                                    <em>"HORA DE INICIO : {{ $patient["hour_start_format"] }}"</em>
+                                                                                                                                    <em>HORA DE INICIO : {{ $patient["hour_start_format"] }}</em>
                                                                                                                                     <br>
-                                                                                                                                    <em>"HORA DE FIN : {{ $patient["hour_end_format"] }}"</em>
+                                                                                                                                    <em>HORA DE FIN : {{ $patient["hour_end_format"] }}</em>
 																																</multiline>
 																															</td>
 																														</tr>
@@ -208,17 +208,17 @@
 																								<tr>
 																									<td align="center">
 																										<!-- Button -->
-																										<table border="0" cellspacing="0" cellpadding="0" style="min-width: 200px;">
+																										<!-- <table border="0" cellspacing="0" cellpadding="0" style="min-width: 200px;">
 																											<tr>
 																												<td class="btn-16 c-white l-white" bgcolor="#f3189e" style="font-size:16px; line-height:20px; mso-padding-alt:15px 35px; font-family:'PT Sans', Arial, sans-serif; text-align:center; font-weight:bold; text-transform:uppercase; border-radius:25px; min-width:auto !important; color:#ffffff;">
 																													<multiline>
 																														<a href="#" target="_blank" class="link c-white" style="display: block; padding: 15px 35px; text-decoration:none; color:#ffffff;">
-																															<span class="link c-white" style="text-decoration:none; color:#ffffff;">REPLY NOW</span>
+																															<span class="link c-white" style="text-decoration:none; color:#ffffff;">RESPONDER AHORA</span>
 																														</a>
 																													</multiline>
 																												</td>
 																											</tr>
-																										</table>
+																										</table> -->
 																										<!-- END Button -->
 																									</td>
 																								</tr>
@@ -238,7 +238,7 @@
 												</tr>
 											</table>
 											<!-- END Container -->
-											
+
 											<!-- Footer -->
 											<table width="100%" border="0" cellspacing="0" cellpadding="0">
 													<tr>
@@ -270,7 +270,7 @@
 																	</td>
 																</tr>
 																<tr>
-																	<td class="text-14 lh-24 a-center c-white l-white pb-20" style="font-size:14px; font-family:'PT Sans', Arial, sans-serif; min-width:auto !important; line-height: 24px; text-align:center; color:#ffffff; padding-bottom: 20px;">
+																	<!-- <td class="text-14 lh-24 a-center c-white l-white pb-20" style="font-size:14px; font-family:'PT Sans', Arial, sans-serif; min-width:auto !important; line-height: 24px; text-align:center; color:#ffffff; padding-bottom: 20px;">
 																		<multiline>
 																			Address name St. 12, City Name, State, Country Name
 																			<br />
@@ -278,7 +278,7 @@
 																			<br />
 																			<a href="mailto:info@website.com" target="_blank" class="link c-white" style="text-decoration:none; color:#ffffff;"><span class="link c-white" style="text-decoration:none; color:#ffffff;">info@website.com</span></a> - <a href="www.website.com" target="_blank" class="link c-white" style="text-decoration:none; color:#ffffff;"><span class="link c-white" style="text-decoration:none; color:#ffffff;">www.website.com</span></a>
 																		</multiline>
-																	</td>
+																	</td> -->
 																</tr>
 																<tr>
 																	<td align="center">
@@ -301,7 +301,7 @@
 														</td>
 													</tr>
 												</table>											<!-- END Footer -->
-											
+
 											<!-- Bottom -->
 											<table width="100%" border="0" cellspacing="0" cellpadding="0">
 													<tr>
